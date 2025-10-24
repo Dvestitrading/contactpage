@@ -10,49 +10,49 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Arial', sans-serif;
             background: white;
             padding: 20px;
             color: #333;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
             border: 2px solid #2c3e50;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
             color: white;
             padding: 30px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 32px;
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
-        
+
         .header .company {
             font-size: 18px;
             font-weight: bold;
             margin-top: 10px;
             letter-spacing: 2px;
         }
-        
+
         .content {
             padding: 30px;
         }
-        
+
         .section {
             margin-bottom: 30px;
         }
-        
+
         .section-title {
             background: #ecf0f1;
             padding: 12px 20px;
@@ -62,54 +62,55 @@
             margin-bottom: 20px;
             border-left: 4px solid #3498db;
         }
-        
+
         .radio-group {
             display: flex;
             gap: 30px;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
-        
+
         .radio-option {
             display: flex;
             align-items: center;
             gap: 8px;
         }
-        
+
         .radio-option input[type="radio"] {
             width: 18px;
             height: 18px;
             cursor: pointer;
         }
-        
+
         .checkbox-option input[type="checkbox"] {
             width: 18px;
             height: 18px;
             cursor: pointer;
             margin-right: 10px;
         }
-        
+
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin-bottom: 15px;
         }
-        
+
         .form-group {
             display: flex;
             flex-direction: column;
         }
-        
+
         .form-group.full-width {
             grid-column: 1 / -1;
         }
-        
+
         .form-group label {
             font-weight: bold;
             margin-bottom: 8px;
             color: #2c3e50;
         }
-        
+
         .form-group input[type="text"],
         .form-group input[type="email"],
         .form-group input[type="tel"] {
@@ -118,18 +119,18 @@
             font-size: 14px;
             transition: border-color 0.3s;
         }
-        
+
         .form-group input:focus {
             outline: none;
             border-color: #3498db;
         }
-        
+
         .profile-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
-        
+
         .profile-option {
             border: 2px solid #bdc3c7;
             padding: 15px;
@@ -138,23 +139,23 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-        
+
         .profile-option:hover {
             border-color: #3498db;
             background: #ecf0f1;
         }
-        
+
         .profile-option input[type="checkbox"] {
             margin-right: 12px;
         }
-        
+
         .seminar-days {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             margin-top: 15px;
         }
-        
+
         .day-option {
             border: 2px solid #bdc3c7;
             padding: 12px 25px;
@@ -164,36 +165,36 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .day-option:hover {
             border-color: #3498db;
             background: #ecf0f1;
         }
-        
+
         .program-box {
             background: #f8f9fa;
             border-left: 4px solid #27ae60;
             padding: 20px;
             margin-top: 20px;
         }
-        
+
         .program-box h3 {
             color: #27ae60;
             margin-bottom: 15px;
             font-size: 16px;
         }
-        
+
         .program-box ul {
             list-style: none;
             padding-left: 0;
         }
-        
+
         .program-box li {
             padding: 8px 0;
             padding-left: 25px;
             position: relative;
         }
-        
+
         .program-box li:before {
             content: "✓";
             position: absolute;
@@ -201,7 +202,7 @@
             color: #27ae60;
             font-weight: bold;
         }
-        
+
         .voucher-section {
             background: #fff3cd;
             border: 3px dashed #ffc107;
@@ -209,26 +210,26 @@
             margin-top: 30px;
             text-align: center;
         }
-        
+
         .voucher-section h3 {
             color: #856404;
             font-size: 22px;
             margin-bottom: 15px;
         }
-        
+
         .voucher-section p {
             font-size: 16px;
             color: #856404;
             margin-bottom: 20px;
         }
-        
+
         .event-options {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             margin-top: 20px;
         }
-        
+
         .event-card {
             background: white;
             border: 2px solid #ffc107;
@@ -236,27 +237,27 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-        
+
         .event-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        
+
         .event-card input[type="checkbox"] {
             margin-right: 10px;
         }
-        
+
         .event-card h4 {
             color: #856404;
             margin-bottom: 10px;
             font-size: 18px;
         }
-        
+
         .event-card p {
             font-size: 14px;
             color: #666;
         }
-        
+
         .footer {
             background: #2c3e50;
             color: white;
@@ -264,7 +265,7 @@
             text-align: center;
             font-size: 12px;
         }
-        
+
         .gdpr-notice {
             background: #ecf0f1;
             padding: 15px;
@@ -273,13 +274,17 @@
             color: #7f8c8d;
             border-left: 3px solid #95a5a6;
         }
-        
-        @media print {
-            body {
-                padding: 0;
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
             }
-            .container {
-                border: none;
+            .event-options {
+                grid-template-columns: 1fr;
+            }
+            .profile-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -287,174 +292,171 @@
 <body>
     <form name="contact" method="POST" data-netlify="true" action="https://formspree.io/f/xqayvrro">
         <input type="hidden" name="form-name" value="contact">
-    <div class="container">
-        <div class="header">
-            <h1>INITIATION AU TRADING</h1>
-            <div class="company">DVESTITRADING</div>
-        </div>
-        
-        <div class="content">
-            <!-- Section Coordonnées -->
-            <div class="section">
-                <div class="section-title">1. Vos Coordonnées</div>
-                
-                <div class="radio-group">
-                    <div class="radio-option">
-                        <input type="radio" id="madame" name="civilite" value="madame">
-                        <label for="madame">Madame</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="monsieur" name="civilite" value="monsieur">
-                        <label for="monsieur">Monsieur</label>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="nom">Nom *</label>
-                        <input type="text" id="nom" name="nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="prenom">Prénom *</label>
-                        <input type="text" id="prenom" name="prenom" required>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telephone">Téléphone *</label>
-                        <input type="tel" id="telephone" name="telephone" required>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="ville">Ville</label>
-                        <input type="text" id="ville" name="ville">
-                    </div>
-                </div>
+        <div class="container">
+            <div class="header">
+                <h1>INITIATION AU TRADING</h1>
+                <div class="company">DVESTITRADING</div>
             </div>
-            
-            <!-- Section Profil Trader -->
-            <div class="section">
-                <div class="section-title">2. Votre Profil de Trader</div>
-                
-                <div class="profile-grid">
-                    <div class="profile-option">
-                        <input type="checkbox" id="decouverte" name="profil[]" value="decouverte">
-                        <label for="decouverte">Aucune expérience<br><small>(découverte)</small></label>
+
+            <div class="content">
+                <!-- Section Coordonnées -->
+                <div class="section">
+                    <div class="section-title">1. Vos Coordonnées</div>
+
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="madame" name="civilite" value="madame">
+                            <label for="madame">Madame</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="monsieur" name="civilite" value="monsieur">
+                            <label for="monsieur">Monsieur</label>
+                        </div>
                     </div>
-                    <div class="profile-option">
-                        <input type="checkbox" id="debutant" name="profil[]" value="debutant">
-                        <label for="debutant">Débutant<br><small>(moins de 6 mois)</small></label>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
                     </div>
-                    <div class="profile-option">
-                        <input type="checkbox" id="intermediaire" name="profil[]" value="intermediaire">
-                        <label for="intermediaire">Intermédiaire<br><small>(6 mois à 2 ans)</small></label>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone *</label>
+                            <input type="tel" id="telephone" name="telephone" required>
+                        </div>
                     </div>
-                    <div class="profile-option">
-                        <input type="checkbox" id="avance" name="profil[]" value="avance">
-                        <label for="avance">Avancé<br><small>(plus de 5 ans)</small></label>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Section Séminaire -->
-            <div class="section">
-                <div class="section-title">3. Séminaire Gratuit</div>
-                
-                <p style="margin-bottom: 15px; font-size: 16px; line-height: 1.6;">
-                    <strong>Nous organisons un séminaire gratuit "Débuter et réussir en trading"</strong><br>
-                    <em>Aucune connaissance préalable requise !</em>
-                </p>
-                
-                <p style="margin-bottom: 10px;"><strong>Quel jour vous conviendrait le mieux ?</strong></p>
-                
-                <div class="seminar-days">
-                    <div class="day-option">
-                        <input type="checkbox" id="lundi" name="jour[]" value="lundi">
-                        <label for="lundi">Lundi</label>
-                    </div>
-                    <div class="day-option">
-                        <input type="checkbox" id="mardi" name="jour[]" value="mardi">
-                        <label for="mardi">Mardi</label>
-                    </div>
-                    <div class="day-option">
-                        <input type="checkbox" id="mercredi" name="jour[]" value="mercredi">
-                        <label for="mercredi">Mercredi</label>
-                    </div>
-                    <div class="day-option">
-                        <input type="checkbox" id="jeudi" name="jour[]" value="jeudi">
-                        <label for="jeudi">Jeudi</label>
-                    </div>
-                    <div class="day-option">
-                        <input type="checkbox" id="vendredi" name="jour[]" value="vendredi">
-                        <label for="vendredi">Vendredi</label>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="ville">Ville</label>
+                            <input type="text" id="ville" name="ville">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="program-box">
-                    <h3>Au programme du séminaire :</h3>
-                    <ul>
-                        <li>Découverte de nos formations</li>
-                        <li>Initiation aux bases du trading</li>
-                        <li>Les outils pour bien démarrer</li>
-                        <li>Offre exclusive salon</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Bon d'inscription -->
-            <div class="voucher-section">
-                <h3>🎟️ BON D'INSCRIPTION</h3>
-                <p>Ce bon vous donne accès à nos événements exclusifs</p>
-                
-                <div class="event-options">
-                    <div class="event-card">
-                        <input type="checkbox" id="soiree" name="event[]" value="soiree">
-                        <label for="soiree">
-                            <h4>🎯 Soirée Présentation</h4>
-                            <p>Présentation complète de notre méthode et de nos formations avec démo en direct</p>
-                        </label>
+
+                <!-- Section Profil Trader -->
+                <div class="section">
+                    <div class="section-title">2. Votre Profil de Trader</div>
+
+                    <div class="profile-grid">
+                        <div class="profile-option">
+                            <input type="checkbox" id="decouverte" name="profil[]" value="decouverte">
+                            <label for="decouverte">Aucune expérience<br><small>(découverte)</small></label>
+                        </div>
+                        <div class="profile-option">
+                            <input type="checkbox" id="debutant" name="profil[]" value="debutant">
+                            <label for="debutant">Débutant<br><small>(moins de 6 mois)</small></label>
+                        </div>
+                        <div class="profile-option">
+                            <input type="checkbox" id="intermediaire" name="profil[]" value="intermediaire">
+                            <label for="intermediaire">Intermédiaire<br><small>(6 mois à 2 ans)</small></label>
+                        </div>
+                        <div class="profile-option">
+                            <input type="checkbox" id="avance" name="profil[]" value="avance">
+                            <label for="avance">Avancé<br><small>(plus de 5 ans)</small></label>
+                        </div>
                     </div>
+                </div>
+
+                <!-- Section Séminaire -->
+                <div class="section">
+                    <div class="section-title">3. Séminaire Gratuit</div>
+
+                    <p style="margin-bottom: 15px; font-size: 16px; line-height: 1.6;">
+                        <strong>Nous organisons un séminaire gratuit "Débuter et réussir en trading"</strong><br>
+                        <em>Aucune connaissance préalable requise !</em>
+                    </p>
+
+                    <p style="margin-bottom: 10px;"><strong>Quel jour vous conviendrait le mieux ?</strong></p>
+
+                    <div class="seminar-days">
+                        <div class="day-option">
+                            <input type="checkbox" id="lundi" name="jour[]" value="lundi">
+                            <label for="lundi">Lundi</label>
+                        </div>
+                        <div class="day-option">
+                            <input type="checkbox" id="mardi" name="jour[]" value="mardi">
+                            <label for="mardi">Mardi</label>
+                        </div>
+                        <div class="day-option">
+                            <input type="checkbox" id="mercredi" name="jour[]" value="mercredi">
+                            <label for="mercredi">Mercredi</label>
+                        </div>
+                        <div class="day-option">
+                            <input type="checkbox" id="jeudi" name="jour[]" value="jeudi">
+                            <label for="jeudi">Jeudi</label>
+                        </div>
+                        <div class="day-option">
+                            <input type="checkbox" id="vendredi" name="jour[]" value="vendredi">
+                            <label for="vendredi">Vendredi</label>
+                        </div>
+                    </div>
+
+                    <div class="program-box">
+                        <h3>Au programme du séminaire :</h3>
+                        <ul>
+                            <li>Découverte de nos formations</li>
+                            <li>Initiation aux bases du trading</li>
+                            <li>Les outils pour bien démarrer</li>
+                            <li>Offre exclusive salon</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bon d'inscription -->
+                <div class="voucher-section">
+                    <h3>🎟️ BON D'INSCRIPTION</h3>
+                    <p>Ce bon vous donne accès à nos événements exclusifs</p>
                     
-                    <div class="event-card">
-                        <input type="checkbox" id="afterwork" name="event[]" value="afterwork">
-                        <label for="afterwork">
-                            <h4>🍷 Afterwork Trading</h4>
-                            <p>Rencontre informelle autour d'un verre pour découvrir le trading dans une ambiance conviviale</p>
-                        </label>
+                    <div class="event-options">
+                        <div class="event-card">
+                            <input type="checkbox" id="soiree" name="event[]" value="soiree">
+                            <label for="soiree">
+                                <h4>🎯 Soirée Présentation</h4>
+                                <p>Présentation complète de notre méthode et de nos formations avec démo en direct</p>
+                            </label>
+                        </div>
+
+                        <div class="event-card">
+                            <input type="checkbox" id="afterwork" name="event[]" value="afterwork">
+                            <label for="afterwork">
+                                <h4>🍷 Afterwork Trading</h4>
+                                <p>Rencontre informelle autour d'un verre pour découvrir le trading dans une ambiance conviviale</p>
+                            </label>
+                        </div>
                     </div>
                 </div>
-                
-                <p style="margin-top: 20px; font-weight: bold;">Valable jusqu'au : ___/___/______</p>
+
+                <!-- RGPD -->
+                <div class="gdpr-notice">
+                    <strong>Protection des données :</strong> Les informations recueillies font l'objet d'un traitement informatique destiné à la gestion de votre inscription et à vous tenir informé de nos actualités. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Vous pouvez exercer ce droit en nous contactant.
+                    <br><br>
+                    <input type="checkbox" id="consent" name="consent" value="yes">
+                    <label for="consent">J'accepte de recevoir des informations de Dvestitrading par email</label>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; border: none; padding: 15px 50px; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 5px; transition: transform 0.2s;">
+                        ENVOYER MA DEMANDE
+                    </button>
+                </div>
             </div>
-            
-            <!-- RGPD -->
-            <div class="gdpr-notice">
-                <strong>Protection des données :</strong> Les informations recueillies font l'objet d'un traitement informatique destiné à la gestion de votre inscription et à vous tenir informé de nos actualités. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Vous pouvez exercer ce droit en nous contactant.
-                <br><br>
-                <input type="checkbox" id="consent" name="consent" value="yes">
-                <label for="consent">J'accepte de recevoir des informations de Dvestitrading par email</label>
-            </div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <button type="submit" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; border: none; padding: 15px 50px; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 5px; transition: transform 0.2s;">
-                    ENVOYER MA DEMANDE
-                </button>
+
+            <div class="footer">
+                DVESTITRADING - Trading avec un expert certifié AMF<br>
+                Contact : www.dvestitrading.com
             </div>
         </div>
-        </form>
-        
-        <div class="footer">
-            DVESTITRADING - Trading avec un expert certifié AMF<br>
-            Contact : www.dvestitrading.com
-        </div>
-    </div>
-</form>
+    </form>
 </body>
 </html>
